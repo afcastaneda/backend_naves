@@ -10,7 +10,7 @@ const registrarJugador = async (req, res) => {
       return res.status(409).json({mensaje:"El jugador ya existe",resultado:null});
     }
     
-    const nuevoJugador = await Player.create({ cedula, nombre, email });
+    const nuevoJugador = await Jugador.create({ cedula, nombre, email });
     res.status(201).json({ mensaje:"Jugador registrado",
       resultado: {
         cedula: nuevoJugador.cedula,

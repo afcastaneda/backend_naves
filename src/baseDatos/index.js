@@ -3,7 +3,7 @@ require('dotenv').config();
 const { Sequelize,DataTypes } = require('sequelize');
 const jugadorModelo = require('../modelos/jugador');
 const nivelModelo = require('../modelos/nivel');
-const jugadorNivelModelo = require('../modelo/jugadorNivel');
+const jugadorNivelModelo = require('../modelos/jugadorNivel');
 
 const sequelize = new Sequelize(
   process.env.DB_NAME,
